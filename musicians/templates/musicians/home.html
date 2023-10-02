@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Famous Musicians</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Light grey background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .button-link {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #FFA500; /* Orange-yellow color */
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button-link:hover {
+            background-color: #FFD700; /* Lighter shade on hover */
+            text-decoration: none;
+        }
+
+        .header-image {
+            margin-bottom: 20px;
+        }
+
+        .header-image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <img src="https://img.freepik.com/premium-vector/musical-notes-old-papyrus-paperretro-background-designtreble-clef_531521-353.jpg?w=2000">
+        </div>
+        <h1>Welcome to Famous Musicians</h1>
+    </header>
+    <p>Explore the lives and contributions of famous historic musicians.</p>
+    <a class="button-link" href="{% url 'musician_list' %}">View Musicians</a>
+    <a class="button-link" href="{% url 'accounts:signup' %}">Sign Up</a>
+    <a class="button-link" href="{% url 'user_auth:user_login' %}">Log In</a>
+</body>
+</html>
